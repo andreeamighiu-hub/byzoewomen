@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="The Women Performance Code — train, eat and recover according to your hormonal cycle. 60 pages. $37.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -171,15 +172,15 @@ h2 em{font-style:italic;color:var(--gold)}
 
 /* ── VALUE STACK ── */
 .val-table{border:1px solid var(--line);overflow:hidden;max-width:560px;margin:48px auto 0}
-.val-row{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--line);background:var(--ivory);gap:16px}
+.val-row{display:grid;grid-template-columns:1fr auto;gap:24px;padding:18px 28px;border-bottom:1px solid var(--line);background:var(--ivory);align-items:start}
 .val-row.bonus-row{background:var(--gold-bg)}
-.val-name{font-size:14px;color:var(--ink2)}
-.val-name small{display:block;font-size:12px;color:var(--ink4);margin-top:2px}
-.val-price{font-family:var(--serif);font-size:18px;font-weight:300;color:var(--ink3);flex-shrink:0}
-.bonus-tag{font-size:9px;font-weight:500;letter-spacing:0.08em;background:var(--gold-lt);color:var(--ink);padding:3px 7px;border-radius:1px;text-transform:uppercase;margin-left:6px;vertical-align:middle}
-.val-row.total-row{background:var(--ink);padding:24px 28px;border-bottom:none}
-.val-row.total-row .val-name{color:var(--ivory2);font-size:15px}
-.val-row.total-row .val-name small{color:rgba(255,255,255,0.25)}
+.val-name{font-size:14px;color:var(--ink2);line-height:1.4;text-align:left}
+.val-name small{display:block;font-size:12px;color:var(--ink4);margin-top:5px;clear:both}
+.val-price{font-family:var(--serif);font-size:18px;font-weight:300;color:var(--ink3);text-align:right}
+.bonus-tag{font-size:9px;font-weight:500;letter-spacing:0.08em;background:var(--gold-lt);color:var(--ink);padding:2px 8px;border-radius:1px;text-transform:uppercase;display:inline-block;vertical-align:baseline;line-height:1;margin-left:6px}
+.val-row.total-row{background:var(--ink);padding:28px 28px;border-bottom:none;align-items:center;display:grid;grid-template-columns:1fr auto;gap:24px}
+.val-row.total-row .val-name{font-family:var(--serif);font-size:18px;font-weight:300;color:rgba(255,255,255,0.5);font-style:italic;line-height:1.3}
+.val-row.total-row .val-name small{font-family:var(--sans);font-style:normal;font-size:11px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:0.06em}
 .val-row.total-row .val-price{font-size:40px;font-weight:400;color:var(--gold-lt)}
 .val-cta{text-align:center;margin-top:36px}
 
@@ -215,7 +216,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.04);padding
 footer .f-logo{font-family:var(--serif);font-size:18px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.8);text-transform:uppercase;display:block;margin-bottom:18px}
 footer a{color:rgba(255,255,255,0.25);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.08)}
 footer .f-links{display:flex;gap:20px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
-footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height:1.75;color:rgba(255,255,255,0.12)}
+footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height:1.75;color:rgba(255,255,255,0.65)}
 
 /* ── ANIMATIONS ── */
 @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -243,8 +244,9 @@ footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height
   .product-head{flex-direction:column;text-align:center;padding:28px 20px}
   .ch{padding:20px 20px;grid-template-columns:36px 1fr}
   .guarantee-box{padding:36px 24px}
-  .val-row,.val-row.total-row{padding:16px 20px}
+  .val-row,.val-row.total-row{padding:16px 20px;gap:16px}
   .hero-anchor{font-size:clamp(48px,14vw,80px)}
+  .product-clarity-grid{grid-template-columns:1fr !important}
 }
 </style>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -301,16 +303,63 @@ footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-item">30-Day Guarantee</div>
-  <div class="trust-item">Instant Download</div>
+  <div class="trust-item">Instant PDF Download</div>
   <div class="trust-item">Science-Backed</div>
-  <div class="trust-item">60 Pages + 7 Bonuses</div>
+  <div class="trust-item">60 Pages · 3 Bonuses Included</div>
 </div>
+
+<!-- PRODUCT CLARITY BLOCK -->
+<section style="background:var(--ivory);padding:72px 28px;border-bottom:1px solid var(--line)">
+  <div style="max-width:860px;margin:0 auto">
+
+    <!-- Label -->
+    <div style="text-align:center;margin-bottom:44px">
+      <div style="font-size:10px;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">What you are getting</div>
+      <h2 style="font-family:var(--serif);font-size:clamp(24px,4vw,36px);font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:10px">The Women Performance Code<br><em style="font-style:italic;color:var(--gold)">A 60-page digital PDF ebook.</em></h2>
+      <p style="font-size:14px;color:var(--ink3);max-width:520px;margin:0 auto;line-height:1.75">Science-backed. Instantly downloadable. Open on your phone, tablet, laptop, desktop or Kindle. Or print it if you prefer reading on paper.</p>
+    </div>
+
+    <!-- Single device mockup (includes book) -->
+    <div style="text-align:center;margin-bottom:52px">
+      <img src="https://res.cloudinary.com/dkp2sozsb/image/upload/v1778737990/Untitled_design_nmvs5p.png"
+           alt="The Women Performance Code PDF Ebook — readable on phone, tablet and laptop"
+           style="max-width:780px;width:100%;filter:drop-shadow(0 24px 48px rgba(0,0,0,0.12))">
+      <p style="font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-lt);margin-top:14px">Digital PDF Ebook · Works on every device</p>
+    </div>
+
+    <!-- For you if — rewritten broad -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+
+      <div style="background:var(--ivory2);border:1px solid var(--line);padding:28px 26px">
+        <div style="font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">This is for you if</div>
+        <div style="display:grid;gap:10px">
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">✓</span>You have ever wondered why your body feels completely different from one week to the next</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">✓</span>You want to understand what is actually happening in your body, not just be told what to do</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">✓</span>You are done being handed plans built for someone else's biology</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">✓</span>You are curious, evidence-led and ready to stop guessing — whatever your age or lifestyle</div>
+        </div>
+      </div>
+
+      <div style="background:var(--ivory2);border:1px solid var(--line);padding:28px 26px">
+        <div style="font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">How it works</div>
+        <div style="display:grid;gap:10px">
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">→</span>Purchase and receive your personal download link by email instantly</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">→</span>Open on your phone, tablet, laptop, desktop or Kindle — any device, any time</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">→</span>Print it at home if you prefer reading on paper</div>
+          <div style="font-size:13px;color:var(--ink3);display:flex;gap:10px;align-items:flex-start;line-height:1.6"><span style="color:var(--gold);flex-shrink:0;margin-top:1px">→</span>No subscription, no app, no account required. One PDF. Yours to keep.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 <!-- ══════════════════════════════════ THE GAP ══════════════════════════════════ -->
 <section class="bg2">
   <div class="container">
     <div class="label">The gap nobody told you about</div>
-    <h2>Every programme you followed<br>was built for a <em>24-hour cycle.</em><br>Yours runs on 28.</h2>
+    <h2>Every programme you followed<br>was built for a <em>24-hour cycle.</em><br>Yours runs on 28 days.</h2>
 
     <div class="gap-block">
       <p>Most fitness programmes were designed using research conducted almost entirely on men. Men whose hormones reset every 24 hours. So the plans that followed — the calorie targets, the training splits, the "just be consistent" advice — were built around a daily cycle.</p>
@@ -719,13 +768,14 @@ footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height
   <span class="f-logo">Zōē</span>
   <div class="f-links">
     <a href="mailto:hello@byzoewomen.com">hello@byzoewomen.com</a>
-    <a href="index.html">Privacy Policy</a>
-    <a href="index.html">Terms</a>
-    <a href="index.html">Refund Policy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="terms.html">Refund Policy</a>
+    <a href="legal.html">Legal Notice</a>
   </div>
   <p>byzoewomen.com</p>
-  <p class="disclaimer">This product is a digital guide for educational and informational purposes only. It does not constitute medical advice. Individual responses to hormonal phases vary. If you experience severe symptoms at any point in your cycle, please consult a qualified healthcare professional. © 2026 Zōē. All rights reserved.</p>
-<p style="font-size:10px;color:rgba(255,255,255,0.18);margin-top:14px;line-height:1.8">Zen Vitality Partners FZ-LLC &nbsp;·&nbsp; Al Hulaila, Ras al Khaimah, United Arab Emirates &nbsp;·&nbsp; <a href="mailto:hello@byzoewomen.com" style="color:rgba(255,255,255,0.25);text-decoration:none">hello@byzoewomen.com</a> &nbsp;·&nbsp; +971 556794883</p>
+  <p class="disclaimer"><strong style="color:rgba(255,255,255,0.75);font-weight:500">The Women Performance Code — $37.</strong> This product is a digital guide for educational and informational purposes only. It does not constitute medical advice. Individual responses to hormonal phases vary. If you experience severe symptoms at any point in your cycle, please consult a qualified healthcare professional. © 2026 Zōē. All rights reserved.</p>
+<p style="font-size:10px;color:rgba(255,255,255,0.55);margin-top:14px;line-height:1.8">Zen Vitality Partners FZ-LLC &nbsp;·&nbsp; Al Hulaila, Ras al Khaimah, United Arab Emirates &nbsp;·&nbsp; <a href="mailto:hello@byzoewomen.com" style="color:rgba(255,255,255,0.55);text-decoration:none">hello@byzoewomen.com</a> &nbsp;·&nbsp; +971 556794883</p>
 </footer>
 
 <script>
