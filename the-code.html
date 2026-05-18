@@ -269,6 +269,37 @@ footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height
     "price": "37.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "US",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 60,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
     "seller": {
       "@type": "Organization",
       "name": "Zōē — byzoewomen.com"
@@ -321,7 +352,7 @@ footer .disclaimer{font-size:10px;max-width:500px;margin:16px auto 0;line-height
 
 <!-- TOPBAR -->
 <div class="topbar">
-  <strong>Launch Price $37</strong> &nbsp;·&nbsp; Rising to $57 Soon &nbsp;·&nbsp; All Bonuses Included
+  <strong>Launch Price $37</strong> &nbsp;·&nbsp; Rising to $57 on 31 July 2026 &nbsp;·&nbsp; All Bonuses Included
 </div>
 
 <!-- NAV -->
