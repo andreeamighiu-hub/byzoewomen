@@ -89,6 +89,12 @@ nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;d
 .total-row .price-was{font-size:18px;color:rgba(255,255,255,0.3);text-decoration:line-through;font-family:var(--sans);font-weight:300;margin-right:12px}
 
 /* WHY BUNDLE */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:1000px;margin:0 auto}
+.test-card{background:var(--ivory2);border:1px solid var(--line);padding:28px 24px 22px;position:relative}
+.test-mark{font-family:var(--serif);font-size:72px;line-height:0.75;color:var(--gold-lt);opacity:0.18;position:absolute;top:14px;left:18px}
+.test-stars{color:var(--gold);font-size:10px;letter-spacing:2px;margin-bottom:10px}
+.test-body{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--ink2);line-height:1.72;margin-bottom:16px;position:relative}
+.test-author{font-size:11px;color:var(--ink4);letter-spacing:0.1em;text-transform:uppercase}
 .why-section{padding:72px 40px;max-width:680px;margin:0 auto;text-align:center}
 .why-section h2{font-family:var(--serif);font-size:clamp(24px,4vw,36px);font-weight:300;color:var(--ink);margin-bottom:20px;line-height:1.2}
 .why-section h2 em{font-style:italic;color:var(--gold)}
@@ -96,15 +102,15 @@ nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;d
 
 /* CTA FINAL */
 .final-cta{background:var(--ink);padding:80px 40px;text-align:center}
-.final-cta h2{font-family:var(--serif);font-size:clamp(22px,3vw,32px);font-weight:300;color:var(--ivory);margin-bottom:12px;line-height:1.15}
+.final-cta h2{font-family:var(--serif);font-size:clamp(28px,5vw,48px);font-weight:300;color:var(--ivory);margin-bottom:12px;line-height:1.15}
 .final-cta h2 em{font-style:italic;color:var(--gold-lt)}
 .final-cta .price{font-family:var(--serif);font-size:44px;color:var(--gold-lt);margin-bottom:6px}
 .final-cta .price span{font-size:20px;color:rgba(255,255,255,0.3);text-decoration:line-through;font-family:var(--sans);font-weight:300;margin-right:10px}
 .final-cta .saving{font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:32px}
 .cta-note{font-size:12px;color:rgba(255,255,255,0.28);margin-top:12px;display:block}
 
-footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,255,255,0.3);font-size:12px;border-top:1px solid rgba(255,255,255,0.05)}
-.f-logo{font-family:var(--serif);font-size:12px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.6);text-transform:uppercase;display:block;margin-bottom:16px}
+footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,255,255,0.3);font-size:11px;border-top:1px solid rgba(255,255,255,0.05)}
+.f-logo{font-family:var(--serif);font-size:18px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.6);text-transform:uppercase;display:block;margin-bottom:16px}
 .f-links{display:flex;gap:20px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
 .f-links a{color:rgba(255,255,255,0.4);text-decoration:none}
 .legal-notice{font-size:10px;color:rgba(255,255,255,0.55);margin-top:14px;line-height:1.8}
@@ -319,6 +325,34 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   <p>The Blueprint teaches you the science. What is happening in your body, phase by phase. Why your energy shifts. Why the same training session feels different two weeks apart. Why the week before your period is always harder.</p>
   <p>The Journal is where you take that knowledge and return to it every single day — for six cycles. Phase by phase. Morning and evening. Until your hormonal rhythm becomes the most familiar thing about you.</p>
   <p>Together they are the complete system. Most women who buy the Blueprint come back for the Journal. Buying them together saves $27 on full price and gets you started on both immediately.</p>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding:64px 40px;background:var(--ivory2);border-top:1px solid var(--line)">
+  <div style="max-width:1000px;margin:0 auto;text-align:center">
+    <div class="section-label">Real women</div>
+    <h2 style="font-family:var(--serif);font-size:clamp(24px,4vw,36px);font-weight:300;color:var(--ink);margin-bottom:32px;line-height:1.2">They were disciplined.<br><em style="font-style:italic;color:var(--gold)">They chose to know.</em></h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">I'd been tracking my food for two years and couldn't figure out why the same deficit worked for a bit and then suddenly felt impossible. The luteal phase section explained years of confusion in a few pages. I literally stopped halfway through because I was like… okay, this is exactly what keeps happening every month.</p>
+        <div class="test-author">— Jane, Interior Designer, FL</div>
+      </div>
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">The scale section alone was worth it. I genuinely thought I was gaining fat every single month and I'd just cut calories harder because of it. It was exhausting. Turns out it was water retention and I'd been making it worse the whole time.</p>
+        <div class="test-author">— Anna, HR, London</div>
+      </div>
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">I've backed off a bit where it makes sense and it actually feels like things are working with me now, not against me.</p>
+        <div class="test-author">— Heather, Financial Director, NY</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- FINAL CTA -->
