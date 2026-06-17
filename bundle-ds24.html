@@ -83,6 +83,12 @@ nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;d
 .total-was{font-size:20px;color:rgba(255,255,255,0.3);text-decoration:line-through;font-family:var(--sans);font-weight:300;margin-right:10px}
 
 /* WHY */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.test-card{background:var(--ivory2);border:1px solid var(--line);padding:28px 24px 22px;position:relative}
+.test-mark{font-family:var(--serif);font-size:72px;line-height:0.75;color:var(--gold-lt);opacity:0.18;position:absolute;top:14px;left:18px}
+.test-stars{color:var(--gold);font-size:10px;letter-spacing:2px;margin-bottom:10px}
+.test-body{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--ink2);line-height:1.72;margin-bottom:16px;position:relative}
+.test-author{font-size:11px;color:var(--ink4);letter-spacing:0.1em;text-transform:uppercase}
 .why-section{padding:80px 40px;max-width:680px;margin:0 auto;text-align:center}
 .why-section h2{font-family:var(--serif);font-size:clamp(26px,4vw,38px);font-weight:300;color:var(--ink);margin-bottom:20px;line-height:1.2}
 .why-section h2 em{font-style:italic;color:var(--gold)}
@@ -96,11 +102,11 @@ nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;d
 
 /* FINAL CTA */
 .final-cta{padding:80px 40px;background:var(--ivory2);border-top:1px solid var(--line);text-align:center}
-.final-cta h2{font-family:var(--serif);font-size:clamp(22px,3vw,32px);font-weight:300;color:var(--ink);line-height:1.1;margin-bottom:12px}
+.final-cta h2{font-family:var(--serif);font-size:clamp(28px,5vw,48px);font-weight:300;color:var(--ink);line-height:1.1;margin-bottom:12px}
 .final-cta h2 em{font-style:italic;color:var(--gold)}
 
-footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,255,255,0.3);font-size:12px}
-.f-logo{font-family:var(--serif);font-size:12px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.6);text-transform:uppercase;display:block;margin-bottom:16px}
+footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,255,255,0.3);font-size:11px}
+.f-logo{font-family:var(--serif);font-size:18px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.6);text-transform:uppercase;display:block;margin-bottom:16px}
 .f-links{display:flex;gap:20px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
 .f-links a{color:rgba(255,255,255,0.4);text-decoration:none}
 .legal-notice{font-size:10px;color:rgba(255,255,255,0.55);margin-top:14px;line-height:1.8}
@@ -230,6 +236,35 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   <p>The Blueprint gives you the science — every phase mapped, every mechanism explained, every protocol specific. You will understand your cycle at a level most women never reach.</p>
   <p>The Journal is where you take that understanding and return to it every single day for six cycles. The morning question that meets you in the follicular phase is different from the one that meets you in the luteal. Because you are different. And this journal knows it.</p>
   <p>Together they are the complete system. The science and the practice. The knowing and the living. At $44.99 for both you save $27 on full price — and you get everything you need to stop fighting your biology and start working with it.</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="bg2" style="padding:64px 40px;background:var(--ivory2);border-top:1px solid var(--line)">
+  <div style="max-width:1000px;margin:0 auto">
+    <div class="section-label">Real women</div>
+    <h2 style="margin-bottom:32px">They were disciplined.<br><em>They chose to know.</em></h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">I'd been tracking my food for two years and couldn't figure out why the same deficit worked for a bit and then suddenly felt impossible. The luteal phase section explained years of confusion in a few pages. I literally stopped halfway through because I was like… okay, this is exactly what keeps happening every month.</p>
+        <div class="test-author">— Jane, Interior Designer, FL</div>
+      </div>
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">The scale section alone was worth it. I genuinely thought I was gaining fat every single month and I'd just cut calories harder because of it. It was exhausting. Turns out it was water retention and I'd been making it worse the whole time.</p>
+        <div class="test-author">— Anna, HR, London</div>
+      </div>
+      <div class="test-card">
+        <div class="test-mark">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-body">I've backed off a bit where it makes sense and it actually feels like things are working with me now, not against me.</p>
+        <div class="test-author">— Heather, Financial Director, NY</div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--ink4);letter-spacing:0.06em;margin-top:18px;font-style:italic">Reviews for The Women's Hormone Blueprint, included in this bundle.</p>
+  </div>
 </section>
 
 <!-- GUARANTEE -->
