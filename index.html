@@ -20,11 +20,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <title>Zōē Women — Hormonal Health Guide & Cycle Syncing Journal | byzoewomen.com</title>
 <meta name="description" content="The science of the female hormonal cycle — applied to training, nutrition, energy and daily life. The Women's Hormone Blueprint and The Aligned Woman Journal. Work with your biology.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -48,7 +50,7 @@ html{scroll-behavior:smooth}
 body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;overflow-x:hidden}
 
 /* ── NAV ── */
-.topbar{background:var(--ink);text-align:center;padding:10px 24px;font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:rgba(250,248,243,0.4)}
+.topbar{background:var(--ink);text-align:center;padding:10px 24px;font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:rgba(250,248,243,0.72)}
 .topbar strong{color:var(--gold-lt)}
 .topbar a{color:var(--gold-lt);text-decoration:none}
 
@@ -68,17 +70,17 @@ nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;d
 .mobile-menu-close{position:absolute;top:24px;right:28px;font-size:28px;cursor:pointer;color:var(--ink);background:none;border:none;font-family:var(--sans)}
 
 /* ── FOOTER ── */
-footer{background:var(--ink);padding:56px 40px 40px;color:rgba(255,255,255,0.55);font-size:11px;letter-spacing:0.05em}
+footer{background:var(--ink);padding:56px 40px 40px;color:rgba(255,255,255,0.75);font-size:11px;letter-spacing:0.05em}
 .footer-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:48px}
 .footer-brand .f-logo{font-family:var(--serif);font-size:20px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.85);text-transform:uppercase;display:block;margin-bottom:14px}
-.footer-brand p{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.75;max-width:220px}
-.footer-col h5{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:16px}
-.footer-col a{display:block;color:rgba(255,255,255,0.6);text-decoration:none;margin-bottom:10px;font-size:12px;transition:color .2s}
+.footer-brand p{font-size:12px;color:rgba(255,255,255,0.75);line-height:1.75;max-width:220px}
+.footer-col-label{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-bottom:16px}
+.footer-col a{display:block;color:rgba(255,255,255,0.78);text-decoration:none;margin-bottom:10px;font-size:12px;transition:color .2s}
 .footer-col a:hover{color:rgba(255,255,255,0.9)}
 .footer-bottom{max-width:1000px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{font-size:10px;color:rgba(255,255,255,0.45)}
+.footer-bottom p{font-size:10px;color:rgba(255,255,255,0.7)}
 .footer-socials{display:flex;gap:16px}
-.footer-socials a{font-size:11px;color:rgba(255,255,255,0.6);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color .2s}
+.footer-socials a{font-size:11px;color:rgba(255,255,255,0.78);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color .2s}
 .footer-socials a:hover{color:rgba(255,255,255,0.9)}
 
 /* ── LAYOUT ── */
@@ -127,15 +129,15 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 .hero{min-height:92vh;background:var(--ink);display:flex;align-items:center;padding:80px 40px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(168,131,42,0.07) 0%,transparent 60%);pointer-events:none}
 .hero-inner{max-width:1000px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.hero-text .eyebrow{font-size:10px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-lt);opacity:0.6;margin-bottom:28px;display:block}
+.hero-text .eyebrow{font-size:10px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:28px;display:block}
 .hero-text h1{font-family:var(--serif);font-size:clamp(34px,4.5vw,54px);font-weight:300;line-height:1.05;color:var(--ivory);margin-bottom:24px}
 .hero-text h1 em{font-style:italic;color:var(--gold-lt)}
-.hero-text p{font-size:16px;color:rgba(250,248,243,0.75);line-height:1.8;margin-bottom:36px;max-width:420px;font-weight:300}
+.hero-text p{font-size:16px;color:rgba(250,248,243,0.88);line-height:1.8;margin-bottom:36px;max-width:420px;font-weight:300}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
 .hero-right{display:flex;flex-direction:column;gap:20px}
 .hero-stat{border:1px solid rgba(255,255,255,0.07);padding:24px 28px;background:rgba(255,255,255,0.02)}
 .hero-stat .stat-num{font-family:var(--serif);font-size:42px;font-weight:300;color:var(--gold-lt);line-height:1;display:block;margin-bottom:6px}
-.hero-stat .stat-label{font-size:12px;color:rgba(250,248,243,0.65);letter-spacing:0.06em;line-height:1.6}
+.hero-stat .stat-label{font-size:12px;color:rgba(250,248,243,0.82);letter-spacing:0.06em;line-height:1.6}
 
 /* ── MISSION ── */
 .mission-section{padding:100px 40px}
@@ -175,11 +177,11 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 .product-card h3{font-family:var(--serif);font-size:24px;font-weight:300;color:var(--ink);margin-bottom:10px;line-height:1.2}
 .product-card.featured h3{color:var(--ivory)}
 .product-card p{font-size:13px;color:var(--ink3);line-height:1.65;margin-bottom:24px}
-.product-card.featured p{color:rgba(250,248,243,0.45)}
+.product-card.featured p{color:rgba(250,248,243,0.78)}
 .product-price{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--ink);margin-bottom:20px}
 .product-card.featured .product-price{color:var(--gold-lt)}
 .product-price span{font-size:14px;font-weight:300;color:var(--ink4);margin-left:6px}
-.product-card.featured .product-price span{color:rgba(250,248,243,0.3)}
+.product-card.featured .product-price span{color:rgba(250,248,243,0.6)}
 
 /* ── TESTIMONIALS ── */
 .test-section{padding:88px 40px}
@@ -209,7 +211,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 .home-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(168,131,42,0.08) 0%,transparent 60%);pointer-events:none}
 .home-cta h2{font-family:var(--serif);font-size:clamp(32px,5vw,56px);font-weight:300;color:var(--ivory);max-width:560px;margin:0 auto 20px;line-height:1.1}
 .home-cta h2 em{font-style:italic;color:var(--gold-lt)}
-.home-cta p{color:rgba(250,248,243,0.7);font-size:16px;margin-bottom:44px;font-weight:300}
+.home-cta p{color:rgba(250,248,243,0.85);font-size:16px;margin-bottom:44px;font-weight:300}
 
 /* ANIMATIONS */
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -254,8 +256,13 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
   },
   "founder": {
     "@type": "Person",
-    "name": "Andreea Mighiu"
+    "name": "Andreea Mighiu",
+    "description": "Founder of Zōē and author of The Women's Hormone Blueprint. An educator in women's hormonal health who works alongside medical professionals to translate the science of the female cycle into practical guidance for training, nutrition and daily life."
   },
+  "sameAs": [
+    "https://www.instagram.com/byzoe.women",
+    "https://www.tiktok.com/@byzoewomen"
+  ],
   "description": "Women's hormonal health platform. The Women's Hormone Blueprint and The Aligned Woman Journal."
 }
 </script>
@@ -327,6 +334,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 </div>
 
 <!-- ════════ HERO ════════ -->
+<main>
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -535,10 +543,12 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
   <h2>Your cycle is not a constraint.<br><em>It is your edge.</em></h2>
   <p>The science of how your body actually works. Week by week. Finally.</p>
   <a href="https://payhip.com/b/Vr8uN" class="payhip-buy-button btn btn-gold" data-theme="none" data-product="Vr8uN">Get the Women's Hormone Blueprint — $37</a>
-  <p style="margin-top:14px;font-size:12px;color:rgba(255,255,255,0.2)">Price rising to $57 on 31 July 2026 &nbsp;·&nbsp; 30-day guarantee &nbsp;·&nbsp; Instant download</p>
+  <p style="margin-top:14px;font-size:12px;color:rgba(255,255,255,0.7)">Price rising to $57 on 31 July 2026 &nbsp;·&nbsp; 60-day guarantee &nbsp;·&nbsp; Instant download</p>
 </section>
 
 <!-- FOOTER -->
+</main>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -546,7 +556,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
       <p>The bridge between elite performance science and female physiology. We do not believe in dealing with symptoms. We believe in governing the system.</p>
     </div>
     <div class="footer-col">
-      <h5>Navigate</h5>
+      <div class="footer-col-label">Navigate</div>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
@@ -554,9 +564,9 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
       <a href="organic-get-the-code.html">The Women's Hormone Blueprint — $37</a>
     </div>
     <div class="footer-col">
-      <h5>Contact</h5>
+      <div class="footer-col-label">Contact</div>
       <a href="mailto:hello@byzoewomen.com">hello@byzoewomen.com</a>
-      <h5 style="margin-top:20px">Follow</h5>
+      <div class="footer-col-label" style="margin-top:20px">Follow</div>
       <a href="https://instagram.com/byzoe.women" target="_blank">Instagram @byzoe.women</a>
       <a href="https://tiktok.com/@byzoewomen" target="_blank">TikTok @byzoewomen</a>
     </div>
