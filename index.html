@@ -206,6 +206,16 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 .blog-card-excerpt{font-size:13px;color:var(--ink3);line-height:1.65}
 .blog-read-more{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:16px;display:block}
 
+/* ── COACHING FEATURE ── */
+.coaching-feature{padding:100px 40px;background:var(--ink);text-align:center;position:relative;overflow:hidden}
+.coaching-feature::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(168,131,42,0.09) 0%,transparent 60%);pointer-events:none}
+.coaching-feature-inner{max-width:600px;margin:0 auto;position:relative}
+.coaching-feature .label{color:var(--gold-lt)}
+.coaching-feature h2{color:var(--ivory);margin-bottom:20px}
+.coaching-feature h2 em{font-style:italic;color:var(--gold-lt)}
+.coaching-feature p{color:rgba(250,248,243,0.82);font-size:16px;line-height:1.85;font-weight:300;max-width:520px;margin:0 auto 24px}
+.coaching-feature-note{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--gold-lt) !important;margin:0 auto 40px !important}
+
 /* ── FINAL CTA ── */
 .home-cta{padding:100px 40px;background:var(--ink);text-align:center;position:relative;overflow:hidden}
 .home-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(168,131,42,0.08) 0%,transparent 60%);pointer-events:none}
@@ -233,6 +243,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
   .product-teaser{padding:88px 24px}
   .product-cards{grid-template-columns:1fr}
   .test-section{padding:88px 24px}
+  .coaching-feature{padding:88px 24px}
   .test-grid{grid-template-columns:1fr}
   .blog-preview{padding:88px 24px}
   .blog-preview-grid{grid-template-columns:1fr}
@@ -303,7 +314,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 
 <!-- TOPBAR -->
 <div class="topbar">
-  <strong>Launch Price $37</strong> &nbsp;·&nbsp; The Women's Hormone Blueprint &nbsp;·&nbsp; <a href="organic-get-the-code.html">Get yours before it rises to $57 →</a>
+  <strong>Launch Price $37</strong> &nbsp;·&nbsp; The Women's Hormone Blueprint &nbsp;·&nbsp; <a href="https://byzoewomen.com/organic-get-the-code">Get yours before it rises to $57 →</a>
 </div>
 
 <!-- NAV -->
@@ -311,11 +322,13 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
   <a href="index.html" class="nav-logo">Zōē</a>
   <div class="nav-links">
     <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Blog</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-    <a href="organic-get-the-code.html" class="nav-cta">Get the Blueprint — $37</a>
+    <a href="the-zoe-method.html">The Method</a>
+    <a href="the-zoe-method-coaching.html">Coaching</a>
+    <a href="https://byzoewomen.com/shop">Shop</a>
+    <a href="https://byzoewomen.com/about">About</a>
+    <a href="https://byzoewomen.com/blog">Blog</a>
+    <a href="https://byzoewomen.com/contact">Contact</a>
+    <a href="https://byzoewomen.com/organic-get-the-code" class="nav-cta">Get the Blueprint — $37</a>
   </div>
   <div class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
     <span></span><span></span><span></span>
@@ -326,11 +339,13 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">×</button>
   <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="blog.html">Blog</a>
-  <a href="shop.html">Shop</a>
-  <a href="contact.html">Contact</a>
-  <a href="organic-get-the-code.html">Get the Blueprint</a>
+  <a href="the-zoe-method.html">The Method</a>
+  <a href="the-zoe-method-coaching.html">Coaching</a>
+  <a href="https://byzoewomen.com/shop">Shop</a>
+  <a href="https://byzoewomen.com/about">About</a>
+  <a href="https://byzoewomen.com/blog">Blog</a>
+  <a href="https://byzoewomen.com/contact">Contact</a>
+  <a href="https://byzoewomen.com/organic-get-the-code">Get the Blueprint</a>
 </div>
 
 <!-- ════════ HERO ════════ -->
@@ -343,7 +358,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
       <p>We are the bridge between elite performance science and female physiology. We do not believe in dealing with symptoms. We believe in governing the system.</p>
       <div class="hero-cta">
         <a href="https://payhip.com/b/Vr8uN" class="payhip-buy-button btn btn-gold" data-theme="none" data-product="Vr8uN">The Women's Hormone Blueprint — $37</a>
-        <a href="shop.html" class="btn btn-outline" style="color:rgba(250,248,243,0.8);border-color:rgba(255,255,255,0.3)">Browse the Shop</a>
+        <a href="https://byzoewomen.com/shop" class="btn btn-outline" style="color:rgba(250,248,243,0.8);border-color:rgba(255,255,255,0.3)">Browse the Shop</a>
       </div>
     </div>
     <div class="hero-right">
@@ -375,7 +390,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
       <p>Your hormones shift every single week — changing your energy, your metabolism, your recovery, your focus. <strong>Nobody mapped it for you. Until now.</strong></p>
       <p>Zōē provides the high-performance protocol for women who refuse to let a 24-hour world dictate their 28-day power.</p>
       <div style="margin-top:32px">
-        <a href="about.html" class="btn btn-outline">Our Story →</a>
+        <a href="https://byzoewomen.com/about" class="btn btn-outline">Our Story →</a>
       </div>
     </div>
   </div>
@@ -464,6 +479,17 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
   </div>
 </section>
 
+<!-- ════════ COACHING FEATURE ════════ -->
+<section class="coaching-feature">
+  <div class="coaching-feature-inner">
+    <div class="label">Personalized Women's Coaching</div>
+    <h2>The Zōē <em>Method</em></h2>
+    <p>Experience the Zōē Method through a personalized three-month coaching journey. Built around female physiology, it combines expert coaching, personalized lifestyle strategies, and daily AI support to help you understand your body, work with your biology, and create sustainable change.</p>
+    <p class="coaching-feature-note">Limited to 100 women per cohort.</p>
+    <a href="the-zoe-method-coaching.html" class="btn btn-gold">Learn More →</a>
+  </div>
+</section>
+
 <!-- ════════ TESTIMONIALS ════════ -->
 <section class="test-section">
   <div class="test-inner">
@@ -500,11 +526,11 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
         <div class="label">From the blog</div>
         <h2 style="margin-bottom:0">The science,<br><em>explained.</em></h2>
       </div>
-      <a href="blog.html" class="btn btn-outline">View all posts →</a>
+      <a href="https://byzoewomen.com/blog" class="btn btn-outline">View all posts →</a>
     </div>
     <div class="blog-preview-grid">
       <div class="blog-preview-card">
-        <a href="blog.html">
+        <a href="https://byzoewomen.com/blog">
           <div class="blog-card-body">
             <div class="blog-date">May 08, 2026</div>
             <div class="blog-card-title">Fat loss and muscle tone for women: how your hormonal cycle affects results</div>
@@ -514,7 +540,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
         </a>
       </div>
       <div class="blog-preview-card">
-        <a href="blog.html">
+        <a href="https://byzoewomen.com/blog">
           <div class="blog-card-body">
             <div class="blog-date">May 2026</div>
             <div class="blog-card-title">Why muscles don't grow despite training hard</div>
@@ -524,7 +550,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
         </a>
       </div>
       <div class="blog-preview-card">
-        <a href="blog.html">
+        <a href="https://byzoewomen.com/blog">
           <div class="blog-card-body">
             <div class="blog-date">May 2026</div>
             <div class="blog-card-title">Women's energy swings explained: the 4-phase hormonal cycle</div>
@@ -558,10 +584,12 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
     <div class="footer-col">
       <div class="footer-col-label">Navigate</div>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="shop.html">Shop</a>
-      <a href="organic-get-the-code.html">The Women's Hormone Blueprint — $37</a>
+      <a href="the-zoe-method.html">The Method</a>
+      <a href="the-zoe-method-coaching.html">Coaching</a>
+      <a href="https://byzoewomen.com/about">About</a>
+      <a href="https://byzoewomen.com/blog">Blog</a>
+      <a href="https://byzoewomen.com/shop">Shop</a>
+      <a href="https://byzoewomen.com/organic-get-the-code">The Women's Hormone Blueprint — $37</a>
     </div>
     <div class="footer-col">
       <div class="footer-col-label">Contact</div>
@@ -572,7 +600,7 @@ h3{font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;line-
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Zōē. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="terms.html">Refund Policy</a></p>
+    <p>© 2026 Zōē. All rights reserved. &nbsp;·&nbsp; <a href="https://byzoewomen.com/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="https://byzoewomen.com/terms">Terms</a> &nbsp;·&nbsp; <a href="https://byzoewomen.com/terms">Refund Policy</a></p>
     <div class="footer-socials">
       <a href="https://instagram.com/byzoe.women" target="_blank">Instagram</a>
       <a href="https://tiktok.com/@byzoewomen" target="_blank">TikTok</a>
