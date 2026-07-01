@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to The Zōē Method — You're In</title>
+<meta name="description" content="Welcome to The Zōē Method. Here's everything you need to know about your next steps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ivory:#FAF8F3;--ivory2:#F3EFE6;--ink:#1C1A16;--ink2:#3A3630;--ink3:#5E574E;--ink4:#9B9189;
+  --gold:#A8832A;--gold-lt:#C9A84C;--line:#DDD7CB;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+  --dark:#111009;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;overflow-x:hidden}
+
+/* NAV */
+nav{background:var(--ivory);border-bottom:1px solid var(--line);padding:0 40px;display:flex;justify-content:space-between;align-items:center;height:64px}
+.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500;letter-spacing:0.22em;color:var(--ink);text-decoration:none;text-transform:uppercase}
+
+/* HERO */
+.welcome-hero{background:var(--dark);padding:80px 40px 72px;text-align:center;position:relative;overflow:hidden}
+.welcome-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(168,131,42,0.14) 0%,transparent 65%);pointer-events:none}
+.welcome-check{width:56px;height:56px;border-radius:50%;background:rgba(168,131,42,0.15);border:1px solid rgba(168,131,42,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;position:relative}
+.welcome-check::after{content:'✓';font-size:22px;color:var(--gold-lt)}
+.welcome-eyebrow{font-size:10px;font-weight:500;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block}
+.welcome-hero h1{font-family:var(--serif);font-size:clamp(32px,5vw,56px);font-weight:300;color:var(--ivory);line-height:1.1;margin-bottom:20px}
+.welcome-hero h1 em{font-style:italic;color:var(--gold-lt)}
+.welcome-hero-sub{font-size:17px;color:rgba(250,248,243,0.72);line-height:1.8;max-width:540px;margin:0 auto;font-weight:300}
+
+/* MAIN */
+.main{max-width:720px;margin:0 auto;padding:72px 40px}
+
+/* WARM MESSAGE */
+.warm-message{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:300;font-style:italic;color:var(--ink);line-height:1.5;margin-bottom:32px}
+.body-text{font-size:16px;color:var(--ink3);line-height:1.88;font-weight:300;margin-bottom:20px}
+.body-text strong{color:var(--ink2);font-weight:500}
+
+/* STEPS */
+.steps-title{font-size:10px;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:block}
+.steps{border:1px solid var(--line);margin-bottom:48px}
+.step{display:grid;grid-template-columns:56px 1fr;border-bottom:1px solid var(--line);background:var(--ivory)}
+.step:last-child{border-bottom:none}
+.step-num{background:var(--ivory2);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:22px;font-weight:300;color:var(--gold);border-right:1px solid var(--line)}
+.step-body{padding:24px 28px}
+.step-label{font-size:9px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
+.step-title{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.step-text{font-size:14px;color:var(--ink3);line-height:1.75;font-weight:300}
+.step-text a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-lt)}
+.step-text a:hover{color:var(--ink)}
+
+/* MR Z CARD */
+.mrz-card{background:var(--ink);border-radius:2px;padding:36px;margin:40px 0;position:relative;overflow:hidden}
+.mrz-card::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(168,131,42,0.07);pointer-events:none}
+.mrz-card-eyebrow{font-size:9px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px}
+.mrz-card h3{font-family:var(--serif);font-size:26px;font-weight:300;color:var(--ivory);margin-bottom:12px;line-height:1.2}
+.mrz-card h3 em{font-style:italic;color:var(--gold-lt)}
+.mrz-card p{font-size:14px;color:rgba(250,248,243,0.7);line-height:1.8;margin-bottom:20px;font-weight:300}
+.mrz-access-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.mrz-access-item{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:16px 18px;border-radius:1px}
+.mrz-access-label{font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
+.mrz-access-text{font-size:13px;color:rgba(250,248,243,0.75);line-height:1.55;font-weight:300}
+.mrz-access-text a{color:var(--gold-lt);text-decoration:none}
+.mrz-note{font-size:12px;color:rgba(250,248,243,0.4);font-style:italic;line-height:1.6}
+
+/* PROMO CARD */
+.promo-card{background:var(--ivory2);border:1px solid var(--line);padding:32px;margin:40px 0;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.promo-card-text h3{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.promo-card-text p{font-size:14px;color:var(--ink3);line-height:1.7;font-weight:300}
+.promo-card-text .promo-price{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--gold);margin-top:10px;display:block}
+.promo-card-text .promo-price span{font-size:14px;color:var(--ink4);font-family:var(--sans);font-weight:300}
+.promo-badge{background:var(--gold);color:var(--ivory);padding:8px 16px;font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;align-self:flex-start;border-radius:1px}
+
+/* BONUSES */
+.bonuses-section{margin:40px 0}
+.bonuses-title{font-size:10px;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:block}
+.bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bonus-card{background:var(--ivory2);border:1px solid var(--line);padding:24px}
+.bonus-card-tag{display:inline-block;font-size:9px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ivory);background:var(--gold);padding:3px 8px;border-radius:1px;margin-bottom:12px}
+.bonus-card h4{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--ink);margin-bottom:6px;line-height:1.2}
+.bonus-card p{font-size:13px;color:var(--ink3);line-height:1.65;font-weight:300}
+
+/* EXPECTATIONS */
+.expectations{background:var(--ivory2);border:1px solid var(--line);padding:32px;margin:40px 0}
+.expectations h3{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ink);margin-bottom:20px}
+.expectation-list{list-style:none}
+.expectation-list li{display:grid;grid-template-columns:18px 150px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline;font-size:14px;color:var(--ink3);line-height:1.6;font-weight:300}
+.expectation-list li:last-child{border-bottom:none}
+.expectation-list .exp-arrow{color:var(--gold);font-size:13px}
+.expectation-list .exp-label{color:var(--ink2);font-weight:500}
+.expectation-list .exp-text{color:var(--ink3)}
+
+/* SIGN OFF */
+.sign-off{margin-top:48px;padding-top:40px;border-top:1px solid var(--line)}
+.sign-off-text{font-size:16px;color:var(--ink3);line-height:1.88;font-weight:300;margin-bottom:16px}
+.sign-off-name{font-family:var(--serif);font-size:22px;font-weight:300;font-style:italic;color:var(--ink);display:block;margin-bottom:4px}
+.sign-off-role{font-size:12px;color:var(--ink4);letter-spacing:0.06em}
+
+/* FOOTER */
+footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,255,255,0.75);font-size:11px;letter-spacing:0.05em}
+.f-logo{font-family:var(--serif);font-size:18px;font-weight:300;letter-spacing:0.22em;color:rgba(201,168,76,0.75);text-transform:uppercase;display:block;margin-bottom:16px}
+.f-links{display:flex;gap:20px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.f-links a{color:rgba(255,255,255,0.78);text-decoration:none}
+.legal-notice{font-size:11px;color:rgba(255,255,255,0.45);margin-top:8px;line-height:1.7;max-width:520px;margin-left:auto;margin-right:auto}
+
+@media(max-width:768px){
+  nav{padding:0 24px}
+  .welcome-hero{padding:60px 24px 52px}
+  .main{padding:48px 24px}
+  .mrz-access-grid{grid-template-columns:1fr}
+  .expectation-list li{grid-template-columns:14px 1fr;grid-template-rows:auto auto;row-gap:2px}
+  .expectation-list .exp-label{grid-column:2}
+  .expectation-list .exp-text{grid-column:2}
+  .promo-card{grid-template-columns:1fr}
+  .bonus-grid{grid-template-columns:1fr}
+  footer{padding:40px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Zōē</a>
+</nav>
+
+<!-- HERO -->
+<section class="welcome-hero">
+  <div class="welcome-check"></div>
+  <span class="welcome-eyebrow">You're in — The Zōē Method</span>
+  <h1>Welcome.<br><em>This is where it changes.</em></h1>
+  <p class="welcome-hero-sub">You just made one of the most genuinely self-respecting decisions you can make — investing in learning how your body actually works, and training with it instead of against it. We're so glad you're here.</p>
+  <p style="font-size:11px;color:rgba(250,248,243,0.45);letter-spacing:0.04em;margin-top:14px">The debit will be performed by ClickBank.com.</p>
+  <p style="font-size:11px;color:rgba(250,248,243,0.4);letter-spacing:0.04em;margin-top:6px">This is a digital coaching program delivered entirely online. Your purchase will appear on your statement as ClickBank or CLKBANK*.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <p class="warm-message">"Take a breath. You don't have to figure this out alone anymore."</p>
+
+  <p class="body-text">Everything you need for the next three months is already in motion. Here's exactly what happens next — and how to get started right now, today, before anything else arrives.</p>
+
+  <!-- ACCESS CONFIRMATION -->
+  <div style="background:var(--ivory2);border:1px solid var(--line);border-left:3px solid var(--gold);padding:24px 28px;margin-bottom:36px">
+    <div style="font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Your access — what happens now</div>
+    <p style="font-size:15px;color:var(--ink2);line-height:1.8;font-weight:300;margin-bottom:8px">Within a few minutes you will receive a confirmation email to the address you used at checkout.</p>
+    <p style="font-size:15px;color:var(--ink2);line-height:1.8;font-weight:300;margin-bottom:8px">Please check your spam folder if you don't see it within 5 minutes.</p>
+    <p style="font-size:15px;color:var(--ink2);line-height:1.8;font-weight:300;margin-bottom:8px">That email contains your link to schedule your onboarding consultation with Andreea.</p>
+    <p style="font-size:15px;color:var(--ink2);line-height:1.8;font-weight:300">Your personalised coaching begins after your introductory consultation.</p>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <span class="steps-title">Your next steps, in order</span>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <span class="step-label">Right now</span>
+        <div class="step-title">Start using Mr Z immediately</div>
+        <div class="step-text">You have instant access to Mr Z AI with 60 free messages — no code needed yet. Open Telegram and search <a href="https://t.me/AskMrZAI_bot" target="_blank" rel="noopener">@AskMrZAI_bot</a> or visit <a href="https://www.ztraining.co.uk/mr-z-ai" target="_blank" rel="noopener">ztraining.co.uk/mr-z-ai</a>. Introduce yourself, tell Mr Z where you are in your cycle, and ask anything. He's ready for you now.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <span class="step-label">Within 24 hours</span>
+        <div class="step-title">Check your email for your Mr Z promo code</div>
+        <div class="step-text">We'll send your personal promo code to the email you used at checkout. This unlocks Mr Z completely free for your full three months — 1,500 messages per month, for 90 days. Check your inbox (and your spam folder, just in case) for an email from hello@byzoewomen.com.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <span class="step-label">Shortly after joining</span>
+        <div class="step-title">Your onboarding call with Andreea</div>
+        <div class="step-text">You'll receive an email with a link to book your welcome call. This is a personal conversation — we'll talk about your goals, your lifestyle, your history, and what your body needs. Everything from this call goes directly to Francesco to build your personalized plan. Come as you are. No preparation needed.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <span class="step-label">After your onboarding call</span>
+        <div class="step-title">Your personalized plan arrives by email</div>
+        <div class="step-text">Francesco builds your fully personalized training and nutrition plan from your onboarding data and delivers it to you by email. This is yours — designed specifically for your body, your cycle, and your life. Not a template.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <span class="step-label">Every 4 weeks</span>
+        <div class="step-title">Your plan evolves with you</div>
+        <div class="step-text">Francesco reviews your progress and sends an updated plan by email across your three months — four adjustments in total. Your plan in month three will be smarter than the one you started with. That's the point.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-body">
+        <span class="step-label">End of month 3</span>
+        <div class="step-title">Your final review call with Andreea</div>
+        <div class="step-text">We close the three months together — reviewing what changed, what you learned, and what's next for your body. This isn't just a check-in. It's a proper conversation about where you're going from here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MR Z CARD -->
+  <div class="mrz-card">
+    <span class="mrz-card-eyebrow">Your daily coaching assistant</span>
+    <h3>Mr Z AI is ready<br><em>for you right now.</em></h3>
+    <p>Don't wait for your plan to arrive before you start. Mr Z is available immediately — ask about today's energy, how to move your body, what to eat, anything. He's built on 18 years of ZTraining methodology and he's yours for the next three months.</p>
+    <div class="mrz-access-grid">
+      <div class="mrz-access-item">
+        <span class="mrz-access-label">Start now (60 free messages)</span>
+        <div class="mrz-access-text">Open Telegram and find:<br><a href="https://t.me/AskMrZAI_bot" target="_blank" rel="noopener">t.me/AskMrZAI_bot</a><br>or visit<br><a href="https://www.ztraining.co.uk/mr-z-ai" target="_blank" rel="noopener">ztraining.co.uk/mr-z-ai</a></div>
+      </div>
+      <div class="mrz-access-item">
+        <span class="mrz-access-label">Full 3-month access (arriving by email)</span>
+        <div class="mrz-access-text">Your personal promo code arrives within 24 hours. Enter it in Mr Z to unlock 1,500 messages per month for your full coaching duration.</div>
+      </div>
+    </div>
+    <p class="mrz-note">Mr Z access is included for your 3-month journey. Your promo code will be emailed to the address you used at checkout within 24 hours.</p>
+  </div>
+
+  <!-- BONUSES -->
+  <div class="bonuses-section">
+    <span class="bonuses-title">Your bonuses — digital guides delivered by email</span>
+  <p style="font-size:13px;color:var(--ink3);font-weight:300;margin-bottom:16px;margin-top:-12px">Download links will be sent to the email address you used at checkout within 24 hours of purchase. Please check your spam folder if you don't see them.</p>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <span class="bonus-card-tag">Included</span>
+        <h4>The Women's Hormone Blueprint</h4>
+        <p>The science-backed digital guide to understanding your hormones, your cycle, and your biology. Read it alongside your experience — it explains the why behind everything you'll be doing. Yours to keep forever.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="bonus-card-tag">Included</span>
+        <h4>The Aligned Woman Journal — 6-month edition</h4>
+        <p>A digital journal for self-reflection and tracking how you feel across your cycle. Use it throughout your three months and beyond. Yours to keep forever.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT TO EXPECT -->
+  <div class="expectations">
+    <h3>What the next few days look like</h3>
+    <ul class="expectation-list">
+      <li><span class="exp-arrow">→</span><span class="exp-label">Today:</span><span class="exp-text">Start using Mr Z (60 free messages, available now). Explore, ask questions, get comfortable with your new daily coaching assistant.</span></li>
+      <li><span class="exp-arrow">→</span><span class="exp-label">Within 24 hours:</span><span class="exp-text">Your Mr Z promo code arrives by email. Your onboarding call booking link arrives too — choose a time that works for you.</span></li>
+      <li><span class="exp-arrow">→</span><span class="exp-label">After your onboarding call:</span><span class="exp-text">Your personalized plan lands in your inbox from Francesco. This is when the real work — and the real results — begin.</span></li>
+      <li><span class="exp-arrow">→</span><span class="exp-label">Every 4 weeks:</span><span class="exp-text">Your plan is reviewed and updated. You're never stuck on something that isn't working.</span></li>
+      <li><span class="exp-arrow">→</span><span class="exp-label">Any time:</span><span class="exp-text">Mr Z is there. Day or night, good day or hard day, ask anything.</span></li>
+    </ul>
+  </div>
+
+  <!-- SIGN OFF -->
+  <div class="sign-off">
+    <p class="sign-off-text">I built this because I lived it — the exhaustion, the frustration, the moment everything finally changed. I want that for every woman who joins this journey. These three months are yours. We're here every step of the way.</p>
+    <p class="sign-off-text">If you have any questions before your onboarding call, reach us at <a href="mailto:hello@byzoewomen.com" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-lt)">hello@byzoewomen.com</a>. We're a real team and we actually read every email.</p>
+    <span class="sign-off-name">Andreea Mighiu</span>
+    <span class="sign-off-role">Founder, Zōē Women · Co-creator, The Zōē Method</span>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span class="f-logo">Zōē</span>
+  <div class="f-links">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms-clickbank.html">Terms</a>
+    <a href="legal-information-clickbank.html">Legal Information</a>
+    <a href="refund-cancellation-policy.html">Refund &amp; Cancellation Policy</a>
+    <a href="mailto:hello@byzoewomen.com">Contact</a>
+  </div>
+  <p class="legal-notice">hello@byzoewomen.com · Zen Vitality Partners FZ-LLC · UAE</p>
+  <p class="legal-notice" style="margin-top:8px">Mr Z AI is a product of ZTraining. Access is included for the duration of your 3-month experience only. Results vary from person to person. This experience is educational and is not a substitute for medical advice.</p>
+  <p class="legal-notice" style="margin-top:8px">The debit will be performed by ClickBank.com. Your purchase will appear on your statement as ClickBank or CLKBANK*. Questions about your order: hello@byzoewomen.com</p>
+  <p style="margin-top:12px;font-size:10px;color:rgba(255,255,255,0.3)">© 2026 Zōē Women · Zen Vitality Partners FZ-LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
