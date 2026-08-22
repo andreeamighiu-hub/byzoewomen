@@ -127,8 +127,6 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   footer{padding:40px 24px}
 }
 </style>
-<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -384,6 +382,14 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
 document.addEventListener('click',e=>{
   if(e.target.tagName==='A'&&e.target.closest('.mobile-menu')){
     document.getElementById('mobileMenu').classList.remove('open');
+  }
+});
+</script>
+<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+<script>
+window.addEventListener('load', function() {
+  if (window.Payhip && window.Payhip.CheckoutWidget) {
+    window.Payhip.CheckoutWidget.mount();
   }
 });
 </script>
