@@ -387,9 +387,16 @@ document.addEventListener('click',e=>{
 </script>
 <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
 <script>
-window.addEventListener('load', function() {
-  if (window.Payhip && window.Payhip.CheckoutWidget) {
-    window.Payhip.CheckoutWidget.mount();
+document.addEventListener('click', function(e) {
+  var btn = e.target.closest('.payhip-buy-button');
+  if (btn) {
+    e.preventDefault();
+    var product = btn.getAttribute('data-product');
+    if (product && window.Payhip && window.Payhip.Checkout) {
+      window.Payhip.Checkout.open({ product: product });
+    } else {
+      window.location.href = btn.getAttribute('href');
+    }
   }
 });
 </script>
