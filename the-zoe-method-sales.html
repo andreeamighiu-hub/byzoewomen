@@ -373,7 +373,7 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
     <span class="section-eyebrow">Meet the coach behind your plan</span>
     <div style="display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start;margin-top:8px">
       <div>
-        <img src="https://res.cloudinary.com/dkp2sozsb/image/upload/v1788080779/Francesco_gym.png" alt="Francesco Zen" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:2px;display:block">
+        <img src="https://res.cloudinary.com/dkp2sozsb/image/upload/v1788083380/Francesco_gym_t2kxlw.png" alt="Francesco Zen" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:2px;display:block">
       </div>
       <div style="padding-top:4px">
         <p style="font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Francesco Zen</p>
@@ -675,6 +675,27 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
 </footer>
 
 <script>
+function zoeToggleVid(el) {
+  const video = el.querySelector('video');
+  const overlay = el.querySelector('.vid-overlay');
+  if (!video) return;
+  if (video.paused) {
+    document.querySelectorAll('.vid-item').forEach(item => {
+      if (item !== el) {
+        const v = item.querySelector('video');
+        const o = item.querySelector('.vid-overlay');
+        if (v && !v.paused) { v.pause(); v.controls = false; if (o) o.style.display = 'flex'; }
+      }
+    });
+    video.controls = true;
+    video.play();
+    if (overlay) overlay.style.display = 'none';
+  } else {
+    video.pause();
+    video.controls = false;
+    if (overlay) overlay.style.display = 'flex';
+  }
+}
 document.addEventListener('click', e => {
   if (e.target.tagName === 'A' && e.target.closest('.mobile-menu')) {
     document.getElementById('mobileMenu').classList.remove('open');
