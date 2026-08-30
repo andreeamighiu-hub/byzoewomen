@@ -199,6 +199,8 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
 .gold-divider.center{margin-left:auto;margin-right:auto}
 
 /* RESPONSIVE */
+.purchasing-title{white-space:nowrap}
+.bridge-line{white-space:nowrap}
 @media(max-width:768px){
   nav{padding:0 24px}
   .nav-links{display:none}
@@ -218,6 +220,8 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   .final-cta{padding:72px 24px}
   .hero-partnership{gap:12px}
   .purchasing-grid{grid-template-columns:1fr !important}
+  .purchasing-title{white-space:normal !important}
+  .bridge-line{white-space:normal !important}
   .coach-grid{grid-template-columns:1fr !important}
 }
 </style>
@@ -258,7 +262,7 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
   <div class="hero-cta-group">
     <a href="https://www.checkout-ds24.com/product/706133" class="btn-primary">Claim Your Spot — Only 100 Available</a>
     <a href="https://byzoewomen.com/the-zoe-method-call-24" style="font-size:13px;color:rgba(250,248,243,0.6);letter-spacing:0.06em;text-decoration:none;border-bottom:1px solid rgba(250,248,243,0.25);padding-bottom:2px;transition:color .2s">Not sure yet? Book a free 15-min consultation →</a>
-    <span class="hero-note">Digital coaching program · 3 months · $2,197 or 3 × $799 · 60-day guarantee</span>
+    <span class="hero-note">Digital coaching program · 3 months · $2,397 or 3 × $799 · 60-day guarantee</span>
   </div>
   <div class="hero-partnership">
     <span class="hero-partnership-label">In partnership with</span>
@@ -268,14 +272,16 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
 
 <!-- WHAT YOU'RE PURCHASING -->
 <section style="background:var(--dark);padding:52px 40px;border-bottom:1px solid rgba(255,255,255,0.06)">
-  <div style="max-width:800px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start" class="purchasing-grid">
+  <div style="max-width:1100px;margin:0 auto">
+    <span style="font-size:10px;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:20px">What you're purchasing</span>
+    <h2 class="purchasing-title" style="font-family:var(--serif);font-size:clamp(20px,2.4vw,32px);font-weight:300;color:var(--ivory);margin-bottom:24px;line-height:1.25">The Zōē Method is a three-month personalised online coaching program for women.</h2>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start" class="purchasing-grid">
     <div>
-      <span style="font-size:10px;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:20px">What you're purchasing</span>
-      <h2 style="font-family:var(--serif);font-size:clamp(20px,2.8vw,28px);font-weight:300;color:var(--ivory);margin-bottom:14px;line-height:1.25">The Zōē Method is a three-month personalised online coaching program for women, delivered entirely digitally.</h2>
       <p style="font-size:14px;color:rgba(250,248,243,0.65);margin-bottom:24px;font-weight:300;line-height:1.8">This is a digital coaching program. No physical products are shipped. After completing your purchase, you will receive a confirmation email with your next steps and a link to schedule your onboarding consultation. Your personalised coaching begins after onboarding.</p>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(168,131,42,0.3);padding:18px 22px">
         <div style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Delivery</div>
-        <p style="font-size:13px;color:rgba(250,248,243,0.6);line-height:1.75;font-weight:300">Everything is delivered online. Your personalised plan, coaching reviews, and digital bonus guides arrive by email. Mr Z AI support is accessed via Telegram. No physical items are shipped.</p>
+        <p style="font-size:13px;color:rgba(250,248,243,0.6);line-height:1.75;font-weight:300">Your personalised plan, coaching reviews, and digital bonus guides arrive by email. Mr Z AI support is accessed via Telegram. No physical items are shipped.</p>
       </div>
     </div>
     <div>
@@ -326,19 +332,17 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
 
 
 <!-- IMAGINE BRIDGE -->
-<section class="section" style="background:var(--ivory);border-top:1px solid var(--line)">
-  <div class="section-inner">
-    <p class="section-body" style="font-family:var(--serif);font-size:clamp(15px,1.6vw,17px);font-weight:300;font-style:italic;color:var(--ink2);line-height:1.85;max-width:680px">
-      Imagine if fitness stopped taking over your life.<br>
-      You could train hard when your body is ready for it and recover when it’s tired.<br>
-      Eat to support your goals without constantly second-guessing your food.<br>
-      Know when to push, when to pull back, and why.<br>
-      Make progress without constantly having to start over.<br>
-      <br>
-      That is the goal.<br>
-      Not doing more.<br>
-      Doing what your body actually needs.
-    </p>
+<section style="background:var(--dark);padding:88px 40px;text-align:left">
+  <div style="max-width:1100px;margin:0 auto">
+    <p style="font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);font-weight:300;font-style:italic;color:var(--gold-lt);line-height:1.4;margin-bottom:44px">Imagine if fitness stopped taking over your life.</p>
+    <div style="display:flex;flex-direction:column;gap:20px;text-align:left;max-width:600px;margin:0 0 44px">
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="color:var(--gold);flex-shrink:0;font-size:14px">—</span><span class="bridge-line" style="font-family:var(--serif);font-size:clamp(14px,1.5vw,17px);font-weight:300;color:rgba(250,248,243,0.82);line-height:1.7">You could train hard when your body is ready for it and recover when it’s tired.</span></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="color:var(--gold);flex-shrink:0;font-size:14px">—</span><span class="bridge-line" style="font-family:var(--serif);font-size:clamp(14px,1.5vw,17px);font-weight:300;color:rgba(250,248,243,0.82);line-height:1.7">Eat to support your goals without constantly second-guessing your food.</span></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="color:var(--gold);flex-shrink:0;font-size:14px">—</span><span class="bridge-line" style="font-family:var(--serif);font-size:clamp(14px,1.5vw,17px);font-weight:300;color:rgba(250,248,243,0.82);line-height:1.7">Know when to push, when to pull back, and why.</span></div>
+      <div style="display:flex;gap:14px;align-items:baseline"><span style="color:var(--gold);flex-shrink:0;font-size:14px">—</span><span class="bridge-line" style="font-family:var(--serif);font-size:clamp(14px,1.5vw,17px);font-weight:300;color:rgba(250,248,243,0.82);line-height:1.7">Make progress without constantly having to start over.</span></div>
+    </div>
+    <div style="width:36px;height:1px;background:var(--gold);margin:0 0 36px"></div>
+    <p style="font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);font-weight:300;font-style:italic;color:var(--ivory);line-height:1.5">That is the goal.<br>Not doing more.<br><span style="color:var(--gold-lt)">Doing what your body actually needs.</span></p>
   </div>
 </section>
 
@@ -563,8 +567,8 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
       <div class="pricing-card featured">
         <span class="pricing-card-label">Pay in Full</span>
         <div style="position:absolute;top:0;right:0;background:var(--gold);color:var(--ivory);font-size:9px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;padding:5px 12px">Best Value</div>
-        <div class="pricing-amount"><span>$</span>2,197</div>
-        <div class="pricing-period">one payment · save $200 · full coaching access</div>
+        <div class="pricing-amount"><span>$</span>2,397</div>
+        <div class="pricing-period">one payment · full coaching access</div>
         <div style="font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(250,248,243,0.4);margin-bottom:8px;margin-top:4px">What's included</div>
         <ul class="pricing-features">
           <li>Welcome call with Andreea</li>
@@ -575,7 +579,7 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
           <li>The Women's Hormone Blueprint</li>
           <li>The Aligned Woman Journal (6-month)</li>
         </ul>
-        <a href="https://www.checkout-ds24.com/product/706133" class="btn-pricing">Join Now — $2,197</a>
+        <a href="https://www.checkout-ds24.com/product/706133" class="btn-pricing">Join Now — $2,397</a>
       </div>
       <div class="pricing-card">
         <span class="pricing-card-label">Monthly Plan</span>
