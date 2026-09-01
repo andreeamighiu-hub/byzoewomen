@@ -224,6 +224,16 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   .bridge-line{white-space:normal !important}
   .coach-grid{grid-template-columns:1fr !important}
 }
+
+  /* Mobile orphan fixes */
+  .btn-break { display: none; }
+  .mobile-br { display: none; }
+  @media (max-width: 600px) {
+    .btn-break { display: inline; }
+    .mobile-br { display: block; }
+    .partnership-logo-desktop { display: none !important; }
+    .partnership-logo-inline { display: inline !important; }
+  }
 </style>
 <script>
 	window.clickbank = {
@@ -262,9 +272,9 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   <h2 class="hero-h2">You just needed a strategy built around<br>how your body actually works.</h2>
   <p class="hero-sub">A personalized three-month online coaching program for women that adapts your training, nutrition, and recovery to your hormones, physiology, and lifestyle — so you can achieve sustainable results without fighting your body.</p>
   <div class="hero-cta-group">
-    <a href="https://zoewomen.pay.clickbank.net/?cbitems=1" class="btn-primary">Claim Your Spot — Only 100 Available</a>
+    <a href="https://zoewomen.pay.clickbank.net/?cbitems=1" class="btn-primary">Claim Your Spot<span class="btn-break"><br>Only 100 Available</span></a>
     <a href="https://byzoewomen.com/the-zoe-method-call-click.html" style="font-size:13px;color:rgba(250,248,243,0.6);letter-spacing:0.06em;text-decoration:none;border-bottom:1px solid rgba(250,248,243,0.25);padding-bottom:2px;transition:color .2s">Not sure yet? Book a free 15-min consultation →</a>
-    <span class="hero-note">Digital coaching program · 3 months · $2,397 or 3 × $799 · 30-Day Satisfaction Guarantee</span>
+    <span class="hero-note">Digital coaching program · 3 months · $2,397 or 3&nbsp;×&nbsp;$799<br class="mobile-br"> · 30&#8209;Day Satisfaction Guarantee</span>
   </div>
   <div class="hero-partnership">
     <span class="hero-partnership-label">In partnership with</span>
@@ -418,7 +428,8 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
       <span class="section-eyebrow">In their words</span>
       <p style="font-family:var(--serif);font-size:clamp(20px,2.8vw,28px);font-weight:300;color:var(--ink);line-height:1.3">Hear directly from women who have experienced Francesco’s coaching firsthand.</p>
     </div>
-    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 40px 12px">
+    <div style="position:relative">
+      <div id="vid-scroll-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 40px 12px" onscroll="zoeCheckScroll(this)">
       <div style="display:flex;gap:24px;width:max-content;min-width:100%;justify-content:center;margin:0 auto">
         <div class="vid-item" style="width:240px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#111009;cursor:pointer;position:relative">
           <video poster="https://res.cloudinary.com/dkp2sozsb/video/upload/v1788080779/0830_1_o2ptcs.jpg" src="https://res.cloudinary.com/dkp2sozsb/video/upload/v1788080779/0830_1_o2ptcs.mp4" preload="none" playsinline style="width:100%;display:block;aspect-ratio:9/16"></video>
@@ -437,6 +448,8 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
           <div class="vid-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.22);border-radius:4px"><div style="width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.7);display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3)"><div style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid rgba(255,255,255,0.85);margin-left:4px"></div></div></div>
         </div>
       </div>
+    </div>
+      <div id="vid-arrow" onclick="zoeNextVideo()" style="display:none;position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:auto;z-index:10;cursor:pointer"><div style="width:44px;height:44px;border-radius:50%;background:rgba(28,26,22,0.82);display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(250,248,243,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div></div>
     </div>
   </div>
 </section>
@@ -544,10 +557,10 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   <div class="partnership-inner">
     <div>
       <span class="section-eyebrow">The partnership behind your plan</span>
-      <h2 class="section-title" style="font-size:clamp(24px,3.5vw,36px);margin-bottom:16px">Zōē Women × <em>ZTraining</em></h2>
+      <h2 class="section-title" style="font-size:clamp(24px,3.5vw,36px);margin-bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">Zōē Women × <em>ZTraining</em><img src="https://res.cloudinary.com/dkp2sozsb/image/upload/v1782460352/Smile_Image_a2mvoo.png" alt="ZTraining" class="partnership-logo-inline" style="height:32px;width:auto;filter:brightness(0);opacity:0.7;display:none"></h2>
       <p style="font-size:15px;color:var(--ink3);line-height:1.8;font-weight:300;max-width:480px">Zōē Women brings the cycle-aware education and women's hormonal health expertise. ZTraining brings 18 years of elite coaching, personalized plan design, and the Mr Z AI system. Together, they built something that didn't exist: a coaching ecosystem that takes a woman's biology seriously, from the first call to the last workout.</p>
     </div>
-    <div class="partnership-logo">
+    <div class="partnership-logo partnership-logo-desktop">
       <img src="https://res.cloudinary.com/dkp2sozsb/image/upload/v1782460352/Smile_Image_a2mvoo.png" alt="ZTraining">
     </div>
   </div>
@@ -558,7 +571,7 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   <div class="pricing-inner">
     <span class="section-eyebrow" style="color:var(--gold)">Join the founding cohort</span>
     <h2 class="pricing-title">Choose how<br><em>you'd like to join.</em></h2>
-    <p class="pricing-sub">Same methodology. Same experience. Same results. Choose the payment option that works for you.</p>
+    <p class="pricing-sub">Same methodology. Same experience.<br class="mobile-br"> Same results. Choose the payment option that works for&nbsp;you.</p>
 
     <div class="scarcity-bar">
       <strong>Spots are filling — this cohort is limited to 100 women.</strong> Because every member receives real human coaching check-ins, we strictly limit each intake. When this cohort fills, the next opens after these women complete their three months.
@@ -658,7 +671,7 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <h2>Your body has been waiting<br>for a plan that <em>actually fits it.</em></h2>
+  <h2>Your body has been waiting<br>for a plan that <em>actually&nbsp;fits&nbsp;it.</em></h2>
   <p>100 spots. Real coaching. A methodology built around how a woman's body actually works. This is what you've been looking for.</p>
   <a href="https://zoewomen.pay.clickbank.net/?cbitems=1" class="btn-primary">Begin Your 3-Month Coaching Journey</a>
   <p style="font-size:12px;color:rgba(250,248,243,0.35);margin-top:20px;margin-bottom:0">Results vary depending on metabolism. This coaching experience is not a substitute for medical advice.</p>
