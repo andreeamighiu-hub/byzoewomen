@@ -228,8 +228,10 @@ footer{background:var(--ink);padding:44px 40px;text-align:center;color:rgba(255,
   /* Mobile orphan fixes */
   .btn-break { display: none; }
   .mobile-br { display: none; }
+  .hero-cta-group .btn-primary { white-space: nowrap; }
   @media (max-width: 600px) {
-    .btn-break { display: inline; }
+    .btn-break { display: none; }
+    .hero-cta-group .btn-primary { white-space: normal; font-size:12px; padding:17px 24px; }
     .mobile-br { display: block; }
     .partnership-logo-desktop { display: none !important; }
     .partnership-logo-inline { display: inline !important; }
@@ -270,7 +272,7 @@ digistorePromocode( { "product_id": 706133, "adjust_domain": true } );
   <h2 class="hero-h2">You just needed a strategy built around<br>how your body actually works.</h2>
   <p class="hero-sub">A personalized three-month online coaching program for women that adapts your training, nutrition, and recovery to your hormones, physiology, and lifestyle — so you can achieve sustainable results without fighting your body.</p>
   <div class="hero-cta-group">
-    <a href="https://www.checkout-ds24.com/product/706133" class="btn-primary">Claim Your Spot<span class="btn-break"><br>Only 100 Available</span></a>
+    <a href="https://www.checkout-ds24.com/product/706133" class="btn-primary">Claim Your Spot — Only 100 Available</a>
     <a href="https://byzoewomen.com/the-zoe-method-call-24" style="font-size:13px;color:rgba(250,248,243,0.6);letter-spacing:0.06em;text-decoration:none;border-bottom:1px solid rgba(250,248,243,0.25);padding-bottom:2px;transition:color .2s">Not sure yet? Book a free 15-min consultation →</a>
     <span class="hero-note">Digital coaching program · 3 months · $2,397 or 3&nbsp;×&nbsp;$799<br class="mobile-br"> · 60&#8209;day guarantee</span>
   </div>
